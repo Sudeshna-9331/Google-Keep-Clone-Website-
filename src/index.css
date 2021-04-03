@@ -1,0 +1,165 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.header{
+  width: 100%;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.5);
+  background-color: #f5ba13;
+  overflow: hidden;
+  position: sticky;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.logo img{
+  height: 70px;
+  margin: 23px 0;
+  margin-right: 20px;
+  border-radius: 40px;
+}
+.logo h1{
+  margin: auto 12px;
+  font-size: 1.6rem;
+}
+.info ol{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info ol li{
+  list-style: none;
+  padding: 12px;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.info ol li:hover{
+  color: gray;
+text-decoration: underline;
+cursor: pointer;
+}
+form{
+  width: 40%;
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 5px 3px 13px -2px rgba(0, 0, 0, 0.5);
+  background-color: rgb(241, 248, 241);
+}
+
+form .input{
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+
+}
+form input{
+  font-size: 20px;
+  border: none;
+  padding-bottom: 12px;
+  background: transparent;
+}
+form input::placeholder{
+  color: black;
+font-weight: bold;
+letter-spacing: 1px;
+}
+form textarea{
+  padding: 14px;
+  color: gray;
+  font-size: 16px;
+  border: none;
+  margin-top: 12px;
+  background: transparent;
+}
+form button{
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  padding: 6px 14px;
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px -2px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color:#f5ba13;
+  color: white;
+  font-size: 19px;
+  
+}
+.main_note button:hover{
+  background-color: white;
+  color: #f5ba13;
+  box-shadow: 5px 3px 22px -2px rgba(0, 0, 0, 0.5);
+}
+.notes{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 5%;
+}
+.notes_list{
+  width: 200px;
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 5px 3px 13px -2px rgba(0, 0, 0, 0.5);
+  padding: 3%;
+  position: relative;
+  background-color: rgb(241, 248, 241);
+}
+.card{
+  padding: 15px 10px;
+
+}
+.card h1{
+  margin-bottom: 2px;
+  overflow-x: scroll;
+  padding-bottom: 24px;
+  font-size: 23px;
+}
+.card hr{
+  margin-bottom: 40px;
+  
+}
+.card div{
+  margin-top: 11px;
+  padding-bottom: 34px;
+   overflow-x: scroll;
+}
+.notes_list button{
+  position: absolute;
+  top: -5%;
+  left: 89%;
+  padding: 6px 10px;
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px -2px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color:#f5ba13;
+  color: white;
+  font-size: 15px;
+ 
+}
+.notes_list button:hover{
+  background-color: white;
+  color: #f5ba13;
+  box-shadow: 5px 3px 22px -2px rgba(0, 0, 0, 0.5);
+
+}
